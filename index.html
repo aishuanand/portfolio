@@ -2,50 +2,218 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>landing page</title>
+    <title>Web Design Mastery | Cooper Portfolio</title>
   </head>
   <body>
     <nav>
-      <div class="nav__content">
-        
-        <label for="check" class="checkbox">
-         
-        </label>
-        <input type="checkbox" name="check" id="check" />
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <section class="section">
-      <div class="section__container">
-        <div class="content">
-          <p class="subtitle">HELLO</p>
-          <h1 class="title">
-            I'm <span>Aishwarya Anand<br />a</span> Web Developer
-          </h1>
-          <p class="description">
-            Welcome to my web developer portfolio. I'm Aishwarya,a
-            creative web developer with a passion for creating beautiful,
-            responsive, and user-friendly websites.
-          </p>
-          <div class="action__btns">
-            <button class="hire__me">Hire Me</button>
-            <button class="portfolio">Portfolio</button>
-          </div>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">ASH<span>.</span></a>
         </div>
-        <div class="image">
-          <img src="page2.avif"/>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#resume">Resume</a></li>
+        <li class="link"><a href="#blog">Blog</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <h4>Hello, I'm aishwarya</h4>
+        <h1> Creative Designer</h1>
+        <p class="section__description">
+          Passionate student with love for solving complex problems through technology.Eager to explore the intersection of software development and emerging technologies.Commited to continuous learning and leveraging IT skills to drive innovation and positive change.
+        </p>
+        <div class="header__btns">
+          <a href="Aishwarya K A (1).pdf" download class="btn btn__primary">Download CV</a>
+          <button class="btn btn__secondary">Read More</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container about__container" id="about">
+      <div class="about__image">
+        <img src="profile1.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <h4>Let's Introduce About Myself</h4>
+        <p class="section__description">
+          Hello,aishwarya, a passionate UI/UX & Creative Designer on a mission
+          to elevate digital experiences. With a keen eye for detail and a flair
+          for creativity,
+          <span>I bring ideas to life in the digital realm.</span> My work is a
+          fusion of user-centric design and aesthetic innovation, creating
+          engaging and memorable interactions.
+        </p>
+        <p class="section__description">
+          Let's embark on a visual journey that
+          <span>transcends boundaries</span> and redefines the digital
+          landscape.
+        </p>
+        <div class="about__progress">
+          <h5>HTML</h5>
+          <div class="about__progressbar" data-progress="95"><span></span></div>
+          <h5>CSS</h5>
+          <div class="about__progressbar" data-progress="80"><span></span></div>
+          <h5>JAVASCRIPT</h5>
+          <div class="about__progressbar" data-progress="50"><span></span></div>
+          <h5>JAVA</h5>
+          <div class="about__progressbar" data-progress="50"><span></span></div>
         </div>
       </div>
     </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">What We Do</h2>
+        <p class="section__description">
+          We craft seamless digital experiences, marrying intuitive UX design
+          with captivating visuals. From user-centric interfaces to engaging
+          visual storytelling, a mastery of the Adobe Creative Suite.
+        </p>
+        <div class="service__grid">
+          <div class="service__card">
+            <span><i class="ri-mac-line"></i></span>
+            <div>
+              <h4>HTML</h4>
+              <p>
+                We provide tailored consultations with expert guidance to
+                optimize your product's usability, functionality, and overall
+                Structure.
+              </p>
+            </div>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-quill-pen-fill"></i></span>
+            <div>
+              <h4>CSS</h4>
+              <p>
+                We specialize in creating stylish websitethat
+                communicate your brand's personality and resonate with your
+                target audience.
+              </p>
+            </div>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-heart-line"></i></span>
+            <div>
+              <h4>JAVASCRIPT</h4>
+              <p>
+                Our meticulous prototyping services allow you to visualize your
+                designs early in the process, ensuring a user-friendly and
+                efficient final product.
+              </p>
+            </div>
+          </div>
+          <div class="service__card">
+            <span><i class="ri-customer-service-fill"></i></span>
+            <div>
+              <h4>JAV</h4>
+              <p>
+                With best backend programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container resume__container" id="resume">
+      <h2 class="section__header">My Qualifications</h2>
+      <p class="section__description">
+        Combined with a passion for continuous learning, my qualifications
+        extend beyond academia, encompassing hands-on projects and a commitment
+        to staying at the forefront of design trends.
+      </p>
+      <div class="resume__tabs">
+        <div class="resume__tablist">
+          <button class="btn active" data-tab="1">Education</button>
+          
+        </div>
+        <div class="resume__tabpanel">
+          <div class="panel__grid active" data-panel="1">
+            <div class="panel__card">
+              <span><i class="ri-graduation-cap-fill"></i></span>
+              <h4>Bachelor's Degree in Graphic Design</h4>
+              <p class="section__description">Crafting Visual Narratives</p>
+              <p class="section__description">
+                Armed with a Bachelor's degree in Information Technology, I have honed
+                my skills in programming language in front-end design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    </section>
+
+    
+            <div>
+              
+              
+
+    <footer class="footer" id="contact">
+      <div class="section__container footer__container">
+        <h2 class="section__header">24/7 Support Hello Says</h2>
+        <p class="section__description">
+          A testament to our commitment, these testimonials showcase the
+          satisfaction of clients who've experienced our 24/7 support.
+        </p>
+        <div class="footer__grid">
+          <div class="footer__content">
+            <h4>aishwarya</h4>
+            <p>
+              Explore more of my work, connect with me on social media, or drop
+              a message.
+            </p>
+            <p>
+              Let's continue the design conversation and embark on new creative
+              journeys together.
+            </p>
+            <p>Thank you for visiting!</p>
+            <div class="footer__socials">
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-linkedin-fill"></i></a>
+            </div>
+          </div>
+          <div class="footer__form">
+            <form action="/">
+              <div class="input__row">
+                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Your Email" />
+              </div>
+              <textarea placeholder="Your Message"></textarea>
+              <button class="btn btn__primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright ©Aishwarya. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
+  
